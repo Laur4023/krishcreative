@@ -37,3 +37,10 @@
     text-align: center;
     margin-top: 1em;
 }
+/*Her starter styling af knap til work*/
+.work a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 1.5rem;
+}
