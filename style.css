@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
+/* Forside billedet styles her*/
 .bigimage img{
     max-width: 100%;
 }
+/* Tekst under billedet styles her*/
 .bigimage h1{
     text-align: center;
     margin-top: 1em;
@@ -17,7 +19,21 @@
     text-align: center;
     margin-top: 1em;
 }
+/* Vandret linje som lukker første sektion styles her */
 .bigimage hr{
     color: rgb(7, 7, 7);
     margin-top: 1rem;
+    margin-bottom: 2em;
+}
+/* Her starter styling af "latest work" sektionen*/
+.work img{
+    max-width: 100%;
+}
+.work h1{
+    text-align: center;
+    margin-top: 1em;
+}
+.work p{
+    text-align: center;
+    margin-top: 1em;
 }
