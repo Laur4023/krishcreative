@@ -5,3 +5,19 @@
 .bigimage img{
     max-width: 100%;
 }
+.bigimage h1{
+    text-align: center;
+    margin-top: 1em;
+}
+.bigimage h3{
+    text-align: center;
+    margin-top: 1em;
+}
+.bigimage p{
+    text-align: center;
+    margin-top: 1em;
+}
+.bigimage hr{
+    color: rgb(7, 7, 7);
+    margin-top: 1rem;
+}
