@@ -2,3 +2,6 @@
     margin: 0;
     padding: 0;
 }
+.bigimage img{
+    max-width: 100%;
+}
