@@ -63,6 +63,7 @@
 /*Her starter styling af knap til work*/
 .work .clickme{
     margin-top: 1.8rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 .work a{
@@ -71,6 +72,18 @@
     color: #f5f5f5;
     background-color: #a2a9a6;
 }
+/* Stylet a href med hjælp fra link https://css-tricks.com/css-basics-styling-links-like-boss/*/
 .work a:hover{
     background-color: #919694;
+}
+.shoot img{
+    max-width: 100%;
+}
+.shoot h1{
+    text-align: center;
+    margin-top: 1em;
+}
+.shoot p{
+    text-align: center;
+    margin-top: 1em;
 }
