@@ -118,3 +118,31 @@
     text-align: center;
     margin-top: 0.5em;
 }
+/* Her starter styling af grid*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "firstimg secondimg"
+    "firstimg thirdimg";
+}
+.firstimg{
+    grid-area: firstimg;
+}
+.firstimg img{
+    max-width: 100%;
+}
+.secondimg{
+    grid-area: secondimg;
+}
+.secondimg img{
+    max-width: 100%;
+}
+.thirdimg{
+    grid-area: thirdimg;
+}
+.thirdimg img{
+    max-width: 100%;
+}
