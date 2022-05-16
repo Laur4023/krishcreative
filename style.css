@@ -132,19 +132,29 @@
 /*Styling af team sektionen*/
 .team{
     background-color: #d6ccc5;
-    padding: 0.5rem;
+    padding: 2rem;
     margin-top: 1rem;
 }
 .team h2{
     text-align: center;
     background-color: #d6ccc5;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 .team img{
-    max-width: 70%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: block;
     /* Hjælp til centrering af billedet fra https://www.w3schools.com/howto/howto_css_image_center.asp*/
+}
+.team-click{
+    text-align: center;
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+.team-click a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: #f5f5f5;
+    background-color: #a2a9a6;
 }
