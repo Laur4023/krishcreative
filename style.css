@@ -19,11 +19,12 @@
     background-color: transparent;
     color: #f5f5f5;
     font-weight: bold;
+    font-size: 1.2em;
 }
 #subpages a{
     position: absolute;
     top: 0.8em;
-    left: 8em;
+    left: 8.5em;
 }
 /* Forside billedet styles her*/
 .bigimage img{
