@@ -76,6 +76,7 @@
 .work a:hover{
     background-color: #919694;
 }
+/*Her starter stylingen af den næste sektion "book a shoot"*/
 .shoot img{
     max-width: 100%;
 }
@@ -87,6 +88,7 @@
     text-align: center;
     margin-top: 1em;
 }
+/*Styling af knap til book a shoot*/
 .shoot .book{
     text-align: center;
     margin-top: 1.8rem;
