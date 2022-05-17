@@ -12,7 +12,7 @@
 /*Root og var() lavet med hjælp fra W3schools https://www.w3schools.com/css/css3_variables.asp*/
 :root{
     --dark: #a2a9a6;
-    --hover: #919694;
+    --hover: #c1978f;
     --pink: #d4a59d;
     --darkbeige: #d6ccc5;
     --beige: #ede6e2;
@@ -47,7 +47,7 @@
     text-align: center;
     margin-top: 1em;
     font-size: 1.2em;
-    color: var(--pink);
+    color: var(--dark);
     font-style: italic;
 }
 .bigimage p{
@@ -85,7 +85,7 @@
     text-decoration: none;
     padding: 0.3em 2.5em;
     color: var(--white);
-    background-color: var(--dark);
+    background-color: var(--pink);
     text-transform: uppercase;
 }
 /* Stylet a href med hjælp fra link https://css-tricks.com/css-basics-styling-links-like-boss/*/
@@ -117,7 +117,7 @@
     text-decoration: none;
     padding: 0.3em 2.5em;
     color: var(--white);
-    background-color: var(--dark);
+    background-color: var(--pink);
     text-transform: uppercase;
 }
 .shoot a:hover{
@@ -208,7 +208,7 @@
     text-decoration: none;
     padding: 0.3em 2.5em;
     color: var(--white);
-    background-color: var(--dark);
+    background-color: var(--pink);
     text-transform: uppercase;
 }
 .team-click a:hover{
