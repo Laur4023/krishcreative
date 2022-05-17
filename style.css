@@ -1,10 +1,13 @@
-/*Ny font fra google fonts https://fonts.google.com/specimen/Playfair+Display?category=Serif&preview.text=HELLO%20AND%20WELCOME&preview.text_type=custom#standard-styles*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Yanone+Kaffeesatz&display=swap');
+/*Hjælp til at implementere nye fonts fra youtube linket https://www.youtube.com/watch?v=Hwq_Mr12bcI*/
+@font-face{
+  src: url(fonts/Didot\ Regular.ttf); 
+  font-family: didot;
+}
 *{
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-    font-family: 'Playfair Display', serif;
+    font-family: didot;
 }
 /*Root og var() lavet med hjælp fra W3schools https://www.w3schools.com/css/css3_variables.asp*/
 :root{
@@ -18,7 +21,7 @@
 /*Alt styles til mobile first og derefter desktop*/
 .navbar{
     background-color: var(--dark);
-    height: 3.8rem;
+    height: 4rem;
 }
 .navbar a{
     float: left;
@@ -37,11 +40,15 @@
     text-align: center;
     margin-top: 1em;
     font-size: 1.3em;
+    font-family: didot;
+    text-transform: uppercase;
 }
 .bigimage h3{
     text-align: center;
     margin-top: 1em;
     font-size: 1.2em;
+    color: var(--pink);
+    font-style: italic;
 }
 .bigimage p{
     text-align: center;
@@ -119,6 +126,8 @@
 .howto h3{
     background-color: var(--beige);
     text-align: center;
+    font-family: helvetica;
+    font-weight:300;
 }
 .howto p{
     background-color: var(--beige);
@@ -200,6 +209,7 @@
 .reviews p{
     text-align: center;
     margin-top: 1.5em;
+    font-style: italic;
 }
 .reviews h4{
     text-align: center;
