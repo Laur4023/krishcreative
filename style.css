@@ -86,16 +86,16 @@
 }
 /*Styling af howto sektionen*/
 .howto h1{
-    background-color: #d6ccc5;
+    background-color: #ede6e2;
     text-align: center;
     padding: 1rem;
 }
 .howto h3{
-    background-color: #d6ccc5;
+    background-color: #ede6e2;
     text-align: center;
 }
 .howto p{
-    background-color: #d6ccc5;
+    background-color: #ede6e2;
     text-align: center;
     padding: 1rem;
 }
@@ -133,13 +133,13 @@
 }
 /*Styling af team sektionen*/
 .team{
-    background-color: #d6ccc5;
+    background-color: #ede6e2;
     padding: 2rem;
     margin-top: 1rem;
 }
 .team h2{
     text-align: center;
-    background-color: #d6ccc5;
+    background-color: #ede6e2;
     margin-bottom: 0.8em;
 }
 .team img{
@@ -147,7 +147,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    /* Hjælp til centrering af billedet fra https://www.w3schools.com/howto/howto_css_image_center.asp*/
+/* Hjælp til centrering af billedet fra https://www.w3schools.com/howto/howto_css_image_center.asp*/
 }
 .team-click{
     text-align: center;
