@@ -38,6 +38,9 @@
 .bigimage img{
     max-width: 100%;
 }
+.desktop-picture{
+    display: none;
+}
 /* Tekst under billedet styles her*/
 .bigimage h1{
     text-align: center;
@@ -244,4 +247,7 @@
     background-color: var(--darkbeige);
     margin-left: 6.1em;
     margin-top: 1.5em;
+}
+@media only screen and (min-width: 600px){
+
 }
