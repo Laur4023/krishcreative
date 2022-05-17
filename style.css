@@ -20,16 +20,19 @@
 }
 /*Alt styles til mobile first og derefter desktop*/
 .navbar{
-    background-color: var(--dark);
+    background-color: var(--darkbeige);
     height: 4rem;
 }
 .navbar a{
     float: left;
     padding: 1em;
-    background-color: var(--dark);
+    background-color: var(--darkbeige);
     text-decoration: none;
     color: var(--white);
     font-size: 1.2em;
+}
+.navbar a:hover{
+    color: var(--hover)
 }
 /* Forside billedet styles her*/
 .bigimage img{
