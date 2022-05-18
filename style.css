@@ -41,10 +41,11 @@
 }
 .navbar a:hover{
     background-color: var(--darkbeige);
+    color: rgb(07, 07, 07);
 }
 .navbar a:active{
-    background-color: var(--pink);
-    color: var(--white);
+    background-color: var(--darkbeige);
+    color: rgb(07, 07, 07);
 }
 .links{
     float: none;
@@ -266,9 +267,9 @@
 @media only screen and (min-width: 660px){  
 .navbar a{
 float: left;
-text-align: center;
 }
 .links{
     float: right;
+    margin-right: 2em;
 }
 }
