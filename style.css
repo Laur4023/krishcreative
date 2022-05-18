@@ -311,4 +311,26 @@ float: left;
 .bigimg-text{
     grid-area: bigimg-text;
 }
+/*Her styles howto sektionen i et grid*/
+.howto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "firstguide secondguide thirdguide fourthguide";
+}
+/*Her tildeles områderne i grid*/
+.firstguide{
+    grid-area: firstguide;
+}
+.secondguide{
+    grid-area: secondguide;
+}
+.thirdguide{
+        grid-area: thirdguide;
+}
+.fourthguide{
+    grid-area: fourthguide;
+}
 }
