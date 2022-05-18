@@ -291,4 +291,24 @@ float: left;
     float: right;
     margin-right: 2em;
 }
+/*Grid til forside billedet og tekst*/
+.bigimage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "bigimage desktop-picture"
+    "bigimg-text bigimg-text";
+}
+.bigimage{
+    grid-area: bigimage;
+}
+.desktop-picture{
+    display: block;
+    grid-area: desktop-picture;
+}
+.bigimg-text{
+    grid-area: bigimg-text;
+}
 }
