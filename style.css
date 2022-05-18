@@ -258,13 +258,32 @@
     background-color: var(--darkbeige);
     height: 8rem;
 }
-.footer h3{
-    display: inline-block;
+footer{
+    width: 100%;
+    height: 12rem;
     background-color: var(--darkbeige);
-    margin-left: 6.1em;
-    margin-top: 1.5em;
+}
+footer h3{
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    text-align: center;
+    background-color: var(--darkbeige);
+}
+.info p{
+text-align: center;
+background-color: var(--darkbeige);
+padding-top: 0.5em;
+}
+footer a{
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(07, 07, 07);
+    background-color: var(--darkbeige);
 }
 @media only screen and (min-width: 660px){  
+/*Her styles navbar til desktop*/
 .navbar a{
 float: left;
 }
