@@ -197,6 +197,12 @@
 .thirdimg img{
     max-width: 100%;
 }
+.bw-first img{
+    display: none;
+}
+.bw-second img{
+    display: none;
+}
 /*Styling af team sektionen*/
 .team{
     background-color: var(--beige);
@@ -319,6 +325,33 @@ float: left;
     grid-gap: 1rem;
     grid-template-areas: 
     "firstguide secondguide thirdguide fourthguide";
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "firstimg secondimg bw-first"
+    "firstimg thirdimg bw-second";
+}
+.firstimg img{
+    grid-area: firstimg;
+}
+.secondimg img{
+    grid-area: secondimg;
+}
+.thirdimg img{
+    grid-area: thirdimg;
+}
+.bw-first img {
+    grid-area: hidden-img;
+    max-width: 100%;
+    display: block;
+}
+.bw-second img {
+    grid-area: hidden-img;
+    max-width: 100%;
+    display: block;
 }
 /*Her tildeles områderne i grid*/
 .firstguide{
