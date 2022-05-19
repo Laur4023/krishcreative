@@ -260,33 +260,38 @@
     margin-top: 1.5em;
     padding-bottom: 2em;
 }
+/*Styling af footer i grid*/
 .footer{
-    background-color: var(--darkbeige);
-    height: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "contact connect"
+    "text facebook"
+    "... instagram"
+    "... email";
 }
-footer{
-    width: 100%;
-    height: 12rem;
-    background-color: var(--darkbeige);
+/*Her tildeles alle områder i footeren et område*/
+.contact{
+    grid-area: contact;
+    margin-left: 1em;
 }
-footer h3{
-    font-size: 1.5em;
-    padding-top: 1.5em;
-    text-align: center;
-    background-color: var(--darkbeige);
+.text{
+    grid-area: text;
+    margin-top: 1em;
 }
-.info p{
-text-align: center;
-background-color: var(--darkbeige);
-padding-top: 0.5em;
+.connect{
+    grid-area: connect;
 }
-footer a{
-    text-decoration: none;
-    display: block;
-    padding: 0.5em;
-    text-align: center;
-    color: rgb(07, 07, 07);
-    background-color: var(--darkbeige);
+.facebook{
+    grid-area: facebook;
+}
+.instagram{
+    grid-area: instagram;
+}
+.email{
+    grid-area: email;
 }
 @media only screen and (min-width: 660px){  
 /*Her styles navbar til desktop*/
