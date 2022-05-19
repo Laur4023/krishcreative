@@ -309,6 +309,7 @@ float: left;
 }
 .bigimage{
     grid-area: bigimage;
+    padding: 1rem;
 }
 .desktop-picture{
     display: block;
@@ -326,6 +327,7 @@ float: left;
     grid-template-areas: 
     "firstguide secondguide thirdguide fourthguide";
 }
+/*Her styles galleriet*/
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
