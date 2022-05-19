@@ -275,7 +275,7 @@
 /*Her tildeles alle områder i footeren et område*/
 .contact{
     grid-area: contact;
-    margin-left: 1em;
+    margin-left: 5.5em;
 }
 .text{
     grid-area: text;
@@ -283,15 +283,35 @@
 }
 .connect{
     grid-area: connect;
+    margin-left: 5.5rem;
 }
 .facebook{
     grid-area: facebook;
+    margin-top: 1em;
+}
+.facebook a{
+    text-decoration: none;
+    color: rgb(07, 07, 07);
 }
 .instagram{
     grid-area: instagram;
 }
+.instagram a{
+    text-decoration: none;
+    color: rgb(07, 07, 07);
+}
 .email{
     grid-area: email;
+}
+.email a{
+    text-decoration: none;
+    color: rgb(07, 07, 07);
+}
+.some{
+    grid-area: some;
+}
+.some img{
+    max-width: 40%;
 }
 @media only screen and (min-width: 660px){  
 /*Her styles navbar til desktop*/
