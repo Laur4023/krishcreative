@@ -307,12 +307,6 @@
     text-decoration: none;
     color: rgb(07, 07, 07);
 }
-.some{
-    grid-area: some;
-}
-.some img{
-    max-width: 40%;
-}
 @media only screen and (min-width: 660px){  
 /*Her styles navbar til desktop*/
 .navbar a{
