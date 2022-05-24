@@ -390,3 +390,94 @@ float: left;
     grid-area: fourthguide;
 }
 }
+/*Her starter vores styling af undersiden packages*/
+.packages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "wedding"
+    "wedding-a"
+    "engagement"
+    "engagement-a"
+    "ceremony"
+    "ceremony-a"
+    "birthday"
+    "birthday-a";
+}
+.packages h1{
+    text-align: center;
+    padding: 1em;
+}
+.wedding{
+    grid-area: wedding;
+}
+.wedding img{
+    max-width: 100%;
+}
+.wedding-a{
+    grid-area: wedding-a;
+    text-align: center;
+    padding: 2rem;
+}
+.wedding-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+}
+.engagement{
+    grid-area: engagement;
+}
+.engagement img{
+    max-width: 100%;
+}
+.engagement-a{
+    grid-area: engagement-a;
+    text-align: center;
+    padding: 2rem;
+}
+.engagement-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+}
+.ceremony{
+    grid-area: ceremony;
+}
+.ceremony img{
+    max-width: 100%;
+}
+.ceremony-a{
+    grid-area: ceremony-a;
+    text-align: center;
+    padding: 2rem;
+}
+.ceremony-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+}
+.birthday{
+    grid-area: birthday;
+}
+.birthday img{
+    max-width: 100%;
+}
+.birthday-a{
+    grid-area: birthday;
+    text-align: center;
+    padding: 2rem;
+}
+.birthday-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+}
