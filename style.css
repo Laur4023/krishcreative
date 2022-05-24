@@ -427,6 +427,10 @@ float: left;
     background-color: var(--pink);
     text-transform: uppercase;
 }
+/*Hvert a link styles også med en hover effekt*/
+.wedding-a a:hover{
+    background-color: var(--hover);
+}
 .engagement{
     grid-area: engagement;
 }
@@ -444,6 +448,9 @@ float: left;
     color: var(--white);
     background-color: var(--pink);
     text-transform: uppercase;
+}
+.engagement-a a:hover{
+    background-color: var(--hover);
 }
 .ceremony{
     grid-area: ceremony;
@@ -463,6 +470,9 @@ float: left;
     background-color: var(--pink);
     text-transform: uppercase;
 }
+.ceremony-a a:hover{
+    background-color: var(--hover);
+}
 .birthday{
     grid-area: birthday;
 }
@@ -480,4 +490,7 @@ float: left;
     color: var(--white);
     background-color: var(--pink);
     text-transform: uppercase;
+}
+.birthday-a a:hover{
+    background-color: var(--hover);
 }
