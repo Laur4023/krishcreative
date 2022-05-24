@@ -494,3 +494,112 @@ float: left;
 .birthday-a a:hover{
     background-color: var(--hover);
 }
+/*Her styles et grid til undersiden prices*/
+.prices {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "silver-package"
+    "silver-content"
+    "silver-activities"
+    "silver-a"
+    "gold-package"
+    "gold-content"
+    "gold-activities"
+    "gold-a"
+    "bronze-package"
+    "bronze-content"
+    "bronze-activities"
+    "bronze-a";
+}
+.silver-package{
+    grid-area: silver-package;
+    padding: 1rem;
+    text-align: center;
+}
+.silver-content{
+    grid-area: silver-content;
+    text-align: center;
+    padding: 1em;
+}
+.silver-activities{
+    grid-area: silver-activities;
+    text-align: center;
+    margin-top: 1rem;
+}
+.silver-a{
+    grid-area: silver-a;
+    text-align: center;
+    margin-top: 1rem;
+}
+.silver-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+}
+.silver-a a:hover{
+    background-color: var(--hover);
+}
+.gold-package{
+    grid-area: gold-package;
+    padding: 1rem;
+    text-align: center;
+}
+.gold-content{
+    grid-area: gold-content;
+    text-align: center;
+    margin-top: 1rem;
+}
+.gold-activities{
+    grid-area: gold-activities;
+    text-align: center;
+    margin-top: 1rem;
+}
+.gold-a{
+    grid-area: gold-a;
+    text-align: center;
+    margin-top: 1rem;
+}
+.gold-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+}
+.gold-a a:hover{
+    background-color: var(--hover);
+}
+.bronze-package{
+    grid-area: bronze-package;
+    padding: 1rem;
+    text-align: center;
+}
+.bronze-content{
+    grid-area: bronze-content;
+    text-align: center;
+    margin-top: 1rem;
+}
+.bronze-activities{
+    grid-area: bronze-activities;
+    text-align: center;
+    margin-top: 1rem;
+}
+.bronze-a{
+    grid-area: bronze-a;
+    text-align: center;
+    margin-top: 1rem;
+}
+.bronze-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
+}
+.bronze-a a:hover{
+    background-color: var(--hover);
+}
