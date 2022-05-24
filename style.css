@@ -109,33 +109,67 @@
 }
 .worktxt{
     grid-area: worktxt;
+    text-align: center;
 }
 .work-a{
     grid-area: work-a;
+    text-align: center;
+    margin-top: 1rem;
+}
+/*Linket styles individuelt til hver sektion*/
+.work-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
 }
 .book{
     grid-area: book;
 }
 .book img{
     max-width: 100%;
+    margin-top: 1rem;
 }
 .booktxt{
     grid-area: booktxt;
+    text-align: center;
 }
 .book-a{
     grid-area: book-a;
+    text-align: center;
+    margin-top: 1rem;
+}
+.book-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
 }
 .team{
     grid-area: team;
 }
 .team img{
     max-width: 100%;
+    margin-top: 1rem;
 }
 .teamtxt{
     grid-area: teamtxt;
+    text-align: center;
 }
 .team-a{
     grid-area: team-a;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.team-a a{
+    text-decoration: none;
+    padding: 0.3em 2.5em;
+    color: var(--white);
+    background-color: var(--pink);
+    text-transform: uppercase;
 }
 /*Styling af howto sektionen*/
 .howto h1{
@@ -154,6 +188,7 @@
     text-align: center;
     padding: 1rem;
 }
+/*Her styles galleriet på forsiden*/
 .gallery-titel{
     text-align: center;
     padding: 1.8em;
