@@ -328,6 +328,17 @@ float: left;
 .bigimg-text{
     grid-area: bigimg-text;
 }
+/*Her styles de 3 sektioner til desktop*/
+.three-sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "work book team"
+    "worktxt booktxt teamtxt"
+    "work-a book-a team-a"; 
+}
 /*Her styles howto sektionen i et grid*/
 .howto {
     display: grid;
