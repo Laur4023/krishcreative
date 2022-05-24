@@ -82,105 +82,60 @@
     margin-top: 1rem;
     margin-bottom: 2em;
 }
-/* Her starter styling af "latest work" sektionen*/
+/*Her styles de tre sektioner til forsiden*/
+/*Først bliver de sat op i et grid*/
+.three-sections{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "work"
+    "worktxt"
+    "work-a"
+    "book"
+    "booktxt"
+    "book-a"
+    "team"
+    "teamtxt"
+    "team-a"; 
+}
+/*Herefter bliver de stylet hver især og tildelt område*/
+.work{
+    grid-area: work;
+}
 .work img{
     max-width: 100%;
 }
-.work h1{
-    text-align: center;
-    margin-top: 1em;
-    font-size: 1.2em;
-    font-family: didot;
-    text-transform: uppercase;
+.worktxt{
+    grid-area: worktxt;
 }
-.work p{
-    text-align: center;
-    margin-top: 1em;
+.work-a{
+    grid-area: work-a;
 }
-/*Her starter styling af knap til work*/
-.work .clickme{
-    margin-top: 1.8rem;
-    margin-bottom: 2rem;
-    text-align: center;
+.book{
+    grid-area: book;
 }
-.work a{
-    text-decoration: none;
-    padding: 0.3em 2.5em;
-    color: var(--white);
-    background-color: var(--pink);
-    text-transform: uppercase;
-}
-/* Stylet a href med hjælp fra link https://css-tricks.com/css-basics-styling-links-like-boss/*/
-.work a:hover{
-    background-color: var(--hover);
-}
-/*Her starter stylingen af den næste sektion "book a shoot"*/
-.shoot img{
+.book img{
     max-width: 100%;
 }
-.shoot h1{
-    text-align: center;
-    margin-top: 1em;
-    font-size: 1.2em;
-    font-family: didot;
-    text-transform: uppercase;
+.booktxt{
+    grid-area: booktxt;
 }
-.shoot p{
-    text-align: center;
-    margin-top: 1em;
+.book-a{
+    grid-area: book-a;
 }
-/*Styling af knap til book a shoot*/
-.shoot .book{
-    text-align: center;
-    margin-top: 1.8rem;
-    margin-bottom: 2rem;
-}
-.shoot a{
-    text-decoration: none;
-    padding: 0.3em 2.5em;
-    color: var(--white);
-    background-color: var(--pink);
-    text-transform: uppercase;
-}
-.shoot a:hover{
-    background-color: var(--hover);
-}
-/*Styling af team sektionen*/
 .team{
-    padding: 2rem;
-    margin-top: 1rem;
-}
-.team h2{
-    text-align: center;
-    margin-top: 1em;
-    font-size: 1.3em;
-    font-family: didot;
-    text-transform: uppercase;
-}
-.team p{
-    text-align: center;
-    margin-top: 1em;
+    grid-area: team;
 }
 .team img{
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-/* Hjælp til centrering af billedet fra https://www.w3schools.com/howto/howto_css_image_center.asp*/
+    max-width: 100%;
 }
-.team-click{
-    text-align: center;
-    margin-bottom: 3rem;
+.teamtxt{
+    grid-area: teamtxt;
 }
-.team-click a{
-    text-decoration: none;
-    padding: 0.3em 2.5em;
-    color: var(--white);
-    background-color: var(--pink);
-    text-transform: uppercase;
-}
-.team-click a:hover{
-    background-color: var(--hover);
+.team-a{
+    grid-area: team-a;
 }
 /*Styling af howto sektionen*/
 .howto h1{
