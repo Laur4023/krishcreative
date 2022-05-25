@@ -63,7 +63,6 @@
     margin-top: 1em;
     font-size: 1.2em;
     font-family: didot;
-    text-transform: uppercase;
 }
 .bigimage h3{
     text-align: center;
@@ -111,6 +110,9 @@
     grid-area: worktxt;
     text-align: center;
 }
+.worktxt h3{
+    margin-bottom: 1em;
+}
 .work-a{
     grid-area: work-a;
     text-align: center;
@@ -135,6 +137,9 @@
     grid-area: booktxt;
     text-align: center;
 }
+.booktxt h3{
+    margin-bottom: 1em;
+}
 .book-a{
     grid-area: book-a;
     text-align: center;
@@ -157,6 +162,9 @@
 .teamtxt{
     grid-area: teamtxt;
     text-align: center;
+}
+.teamtxt h3{
+    margin-bottom: 1em;
 }
 .team-a{
     grid-area: team-a;
@@ -408,9 +416,15 @@ float: left;
 .packages h1{
     text-align: center;
     padding: 1em;
+    font-size: 1.5em;
 }
+/*Hvert element tildeles en plads*/
 .wedding{
     grid-area: wedding;
+}
+.wedding h3{
+    text-align: center;
+    padding: 1em;
 }
 .wedding img{
     max-width: 100%;
@@ -434,6 +448,10 @@ float: left;
 .engagement{
     grid-area: engagement;
 }
+.engagement h3{
+    text-align: center;
+    padding: 1em;
+}
 .engagement img{
     max-width: 100%;
 }
@@ -454,6 +472,10 @@ float: left;
 }
 .ceremony{
     grid-area: ceremony;
+}
+.ceremony h3{
+    text-align: center;
+    padding: 1em;
 }
 .ceremony img{
     max-width: 100%;
@@ -476,6 +498,10 @@ float: left;
 .birthday{
     grid-area: birthday;
 }
+.birthday h3{
+    text-align: center;
+    padding: 1em;
+}
 .birthday img{
     max-width: 100%;
 }
@@ -494,6 +520,11 @@ float: left;
 .birthday-a a:hover{
     background-color: var(--hover);
 }
+.site-title{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.8em;
+}
 /*Her styles et grid til undersiden prices*/
 .prices {
     display: grid;
@@ -504,16 +535,19 @@ float: left;
     "silver-content"
     "silver-more"
     "silver-activities"
+    "silver-price"
     "silver-a"
     "gold-package"
     "gold-content"
     "gold-more"
     "gold-activities"
+    "gold-price"
     "gold-a"
     "bronze-package"
     "bronze-content"
     "bronze-more"
     "bronze-activities"
+    "bronze-price"
     "bronze-a";
 }
 /*Hvert element tildeles først en plads i grid og bliver derefter stylet*/
@@ -527,6 +561,8 @@ float: left;
     grid-area: silver-content;
     padding: 1em;
     margin-left: 7rem;
+    max-width: fit-content;
+    border-style: groove;
 }
 /*Hver li liste skal styles individuelt med tag list-style:none for at fjerne bullet points*/
 .silver-content li{
@@ -540,10 +576,15 @@ float: left;
 .silver-activities{
     grid-area: silver-activities;
     margin-top: 1rem;
-    margin-left: 7rem;
+    text-align: center;
 }
 .silver-activities li{
     list-style: none;
+}
+.silver-price{
+    grid-area: silver-price;
+    text-align: center;
+    margin-top: 1em;
 }
 /*Her styles knapperne*/
 .silver-a{
@@ -570,8 +611,10 @@ float: left;
 }
 .gold-content{
     grid-area: gold-content;
-    margin-top: 1rem;
+    padding: 1em;
     margin-left: 7rem;
+    max-width: fit-content;
+    border-style: groove;
 }
 .gold-content li{
     list-style: none;
@@ -584,10 +627,15 @@ float: left;
 .gold-activities{
     grid-area: gold-activities;
     margin-top: 1rem;
-    margin-left: 7rem;
+    text-align: center;
 }
 .gold-activities li{
     list-style: none;
+}
+.gold-price{
+    grid-area: gold-price;
+    text-align: center;
+    margin-top: 1em;
 }
 .gold-a{
     grid-area: gold-a;
@@ -611,8 +659,10 @@ float: left;
 }
 .bronze-content{
     grid-area: bronze-content;
-    margin-top: 1rem;
+    padding: 1em;
     margin-left: 7rem;
+    max-width: fit-content;
+    border-style: groove;
 }
 .bronze-content li{
     list-style: none;
@@ -624,11 +674,16 @@ float: left;
 }
 .bronze-activities{
     grid-area: bronze-activities;
-    margin-left: 7rem;
+    text-align: center;
     margin-top: 1rem;
 }
 .bronze-activities li{
     list-style: none;
+}
+.bronze-price{
+    grid-area: bronze-price;
+    text-align: center;
+    margin-top: 1em;
 }
 .bronze-a{
     grid-area: bronze-a;
