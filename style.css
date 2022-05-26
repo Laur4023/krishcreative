@@ -579,20 +579,14 @@ float: left;
     grid-template-areas: 
     "silver-package"
     "silver-content"
-    "silver-more"
-    "silver-activities"
     "silver-price"
     "silver-a"
     "gold-package"
     "gold-content"
-    "gold-more"
-    "gold-activities"
     "gold-price"
     "gold-a"
     "bronze-package"
     "bronze-content"
-    "bronze-more"
-    "bronze-activities"
     "bronze-price"
     "bronze-a";
 }
@@ -611,24 +605,16 @@ float: left;
     border-style: groove;
     background-color: var(--beige);
     border-radius: 10%;
+    border-width: medium;
     border-color: var(--silver);
+}
+.silver-content h3{
+    background-color: var(--beige);
+    padding: 1em;
 }
 /*Hver li liste skal styles individuelt med tag list-style:none for at fjerne bullet points*/
 .silver-content li{
     background-color: var(--beige);
-    list-style: none;
-}
-.silver-more{
-    grid-area: silver-more;
-    margin-top: 1em;
-    text-align: center;
-}
-.silver-activities{
-    grid-area: silver-activities;
-    margin-top: 1rem;
-    text-align: center;
-}
-.silver-activities li{
     list-style: none;
 }
 .silver-price{
@@ -657,8 +643,10 @@ float: left;
 .gold-package{
     grid-area: gold-package;
     padding: 1rem;
+    margin-top: 2em;
     text-align: center;
 }
+/*Content og li har har begge fået en baggrundsfarve for at dække hele kassen*/
 .gold-content{
     grid-area: gold-content;
     padding: 1em;
@@ -668,24 +656,15 @@ float: left;
     margin-right: auto;
     background-color: var(--beige);
     border-radius: 10%;
+    border-width: medium;
     border-color: var(--gold);
 }
 .gold-content li{
     list-style: none;
     background-color: var(--beige);
 }
-.gold-more{
-    grid-area: gold-more;
-    margin-top: 1em;
-    text-align: center;
-}
-.gold-activities{
-    grid-area: gold-activities;
-    margin-top: 1rem;
-    text-align: center;
-}
-.gold-activities li{
-    list-style: none;
+.gold-content h3{
+    background-color: var(--beige);
 }
 .gold-price{
     grid-area: gold-price;
@@ -710,6 +689,7 @@ float: left;
 .bronze-package{
     grid-area: bronze-package;
     padding: 1rem;
+    margin-top: 2em;
     text-align: center;
 }
 .bronze-content{
@@ -721,24 +701,15 @@ float: left;
     border-style: groove;
     background-color: var(--beige);
     border-radius: 10%;
+    border-width: medium;
     border-color: var(--bronze);
+}
+.bronze-content h3{
+    background-color: var(--beige);
 }
 .bronze-content li{
     list-style: none;
     background-color: var(--beige);
-}
-.bronze-more{
-    grid-area: bronze-more;
-    margin-top: 1em;
-    text-align: center;
-}
-.bronze-activities{
-    grid-area: bronze-activities;
-    text-align: center;
-    margin-top: 1rem;
-}
-.bronze-activities li{
-    list-style: none;
 }
 .bronze-price{
     grid-area: bronze-price;
@@ -760,6 +731,7 @@ float: left;
 .bronze-a a:hover{
     background-color: var(--hover);
 }
+/*Her styles pris pakkerne til desktop*/
 @media only screen and (min-width: 660px){
     .prices {
         display: grid;
