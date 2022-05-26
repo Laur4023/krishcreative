@@ -665,6 +665,7 @@ float: left;
 }
 .gold-content h3{
     background-color: var(--beige);
+    padding: 1em;
 }
 .gold-price{
     grid-area: gold-price;
@@ -706,6 +707,7 @@ float: left;
 }
 .bronze-content h3{
     background-color: var(--beige);
+    padding: 1em;
 }
 .bronze-content li{
     list-style: none;
@@ -720,6 +722,7 @@ float: left;
     grid-area: bronze-a;
     text-align: center;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 .bronze-a a{
     text-decoration: none;
@@ -735,18 +738,19 @@ float: left;
 @media only screen and (min-width: 660px){
     .prices {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
         "silver-package gold-package bronze-package"
         "silver-content gold-content bronze-content"
-        "silver-more gold-more bronze-more"
-        "silver-activities gold-activities bronze-activities"
         "silver-price gold-price bronze-price"
         "silver-a gold-a bronze-a";
     }
     .site-title{
         text-align: center;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
+    }
+    .silver-package h3{
+        margin-top: 1.8em;
     }
 }
