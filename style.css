@@ -253,8 +253,10 @@
     "logo-footer logo-footer";
 }
 /*Her tildeles alle områder i footeren et område*/
+/*Baggrundsfarve er tilføjet til hvert element da hele sektionen dækkes på den måde*/
 .footer{
     background-color: var(--darkbeige);
+    margin-top: 1rem;
 }
 .contact{
     grid-area: contact;
@@ -262,7 +264,7 @@
 }
 .contact h3{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 1.5em;
     background-color: var(--darkbeige);
 }
 .text{
@@ -279,7 +281,7 @@
 }
 .connect h3{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 1.5em;
     background-color: var(--darkbeige);
 }
 .facebook{
@@ -288,10 +290,14 @@
     text-align: center;
     background-color: var(--darkbeige);
 }
+/*Link styles her*/
 .facebook a{
     text-decoration: none;
     color: rgb(07, 07, 07);
     background-color: var(--darkbeige);
+}
+.facebook a:hover{
+    color: var(--white);
 }
 .instagram{
     grid-area: instagram;
@@ -303,6 +309,9 @@
     color: rgb(07, 07, 07);
     background-color: var(--darkbeige);
 }
+.instagram a:hover{
+    color: var(--white);
+}
 .email{
     grid-area: email;
     text-align: center;
@@ -313,6 +322,10 @@
     color: rgb(07, 07, 07);
     background-color: var(--darkbeige);
 }
+.email a:hover{
+    color: var(--white);
+}
+/*Billede til footer styles her*/
 .logo-footer{
     grid-area: logo-footer;
     background-color: var(--darkbeige);
@@ -411,6 +424,18 @@ float: left;
 }
 .fourthguide{
     grid-area: fourthguide;
+}
+.footer{
+    margin-top: 2rem;
+}
+.contact h3{
+    margin-top: 3em;
+}
+.connect h3{
+    margin-top: 3em;
+}
+.logo-footer img{
+    max-width: 50%;
 }
 }
 /*Her starter vores styling af undersiden packages*/
