@@ -17,6 +17,9 @@
     --darkbeige: #d6ccc5;
     --beige: #ede6e2;
     --white: #f5f5f5;
+    --gold: #D4AF37;
+    --silver: #C0C0C0;
+    --bronze: #9F7A34;
 }
 /*Alt styles til mobile first og derefter desktop*/
 .navbar{
@@ -560,22 +563,12 @@ float: left;
 .birthday-a a:hover{
     background-color: var(--hover);
 }
-@media only screen and (min-width: 660px){
-    .packages {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "wedding engagement"
-        "wedding-a engagement-a"
-        "ceremony birthday"
-        "ceremony-a birthday-a";
-    }
-}
+/*Her styles packages grid til desktop*/
 /*Her starter stylingen af prices undersiden, allerførst styling af overskriften*/
 .site-title{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom: 2em;
     font-size: 0.8em;
 }
 /*Her styles et grid til undersiden prices*/
@@ -607,18 +600,22 @@ float: left;
 .silver-package{
     grid-area: silver-package;
     padding: 1rem;
-    margin-top: 1rem;
     text-align: center;
 }
 .silver-content{
     grid-area: silver-content;
     padding: 1em;
-    margin-left: 7rem;
+    margin-left: auto;
+    margin-right: auto;
     max-width: fit-content;
     border-style: groove;
+    background-color: var(--beige);
+    border-radius: 10%;
+    border-color: var(--silver);
 }
 /*Hver li liste skal styles individuelt med tag list-style:none for at fjerne bullet points*/
 .silver-content li{
+    background-color: var(--beige);
     list-style: none;
 }
 .silver-more{
@@ -665,12 +662,17 @@ float: left;
 .gold-content{
     grid-area: gold-content;
     padding: 1em;
-    margin-left: 7rem;
     max-width: fit-content;
     border-style: groove;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--beige);
+    border-radius: 10%;
+    border-color: var(--gold);
 }
 .gold-content li{
     list-style: none;
+    background-color: var(--beige);
 }
 .gold-more{
     grid-area: gold-more;
@@ -713,12 +715,17 @@ float: left;
 .bronze-content{
     grid-area: bronze-content;
     padding: 1em;
-    margin-left: 7rem;
+    margin-left: auto;
+    margin-right: auto;
     max-width: fit-content;
     border-style: groove;
+    background-color: var(--beige);
+    border-radius: 10%;
+    border-color: var(--bronze);
 }
 .bronze-content li{
     list-style: none;
+    background-color: var(--beige);
 }
 .bronze-more{
     grid-area: bronze-more;
@@ -752,4 +759,22 @@ float: left;
 }
 .bronze-a a:hover{
     background-color: var(--hover);
+}
+@media only screen and (min-width: 660px){
+    .prices {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "silver-package gold-package bronze-package"
+        "silver-content gold-content bronze-content"
+        "silver-more gold-more bronze-more"
+        "silver-activities gold-activities bronze-activities"
+        "silver-price gold-price bronze-price"
+        "silver-a gold-a bronze-a";
+    }
+    .site-title{
+        text-align: center;
+        margin-bottom: 3em;
+    }
 }
