@@ -239,72 +239,87 @@
     display: none;
 }
 /*Styling af review sektionen*/
-.reviews h2{
-    text-align: center;
-    margin-top: 1.5em;
-    font-size: 1.3em;
-    font-family: didot;
-    text-transform: uppercase;
-}
-.reviews p{
-    text-align: center;
-    margin-top: 1.5em;
-    font-style: italic;
-}
-.reviews h4{
-    text-align: center;
-    margin-top: 1.5em;
-    padding-bottom: 2em;
-}
-.reviews hr{
-    margin-bottom: 1.5rem;
-}
+
 /*Styling af footer i grid*/
 .footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 1rem;
     grid-template-areas: 
     "contact connect"
     "text facebook"
     "... instagram"
-    "... email";
+    "... email"
+    "logo-footer logo-footer";
 }
 /*Her tildeles alle områder i footeren et område*/
+.footer{
+    background-color: var(--darkbeige);
+}
 .contact{
     grid-area: contact;
-    margin-left: 5.5em;
+    background-color: var(--darkbeige);
+}
+.contact h3{
+    text-align: center;
+    margin-top: 1em;
+    background-color: var(--darkbeige);
 }
 .text{
     grid-area: text;
     margin-top: 1em;
+    text-align: center;
+}
+.text p{
+    background-color: var(--darkbeige);
 }
 .connect{
     grid-area: connect;
-    margin-left: 5.5rem;
+    background-color: var(--darkbeige);
+}
+.connect h3{
+    text-align: center;
+    margin-top: 1em;
+    background-color: var(--darkbeige);
 }
 .facebook{
     grid-area: facebook;
     margin-top: 1em;
+    text-align: center;
+    background-color: var(--darkbeige);
 }
 .facebook a{
     text-decoration: none;
     color: rgb(07, 07, 07);
+    background-color: var(--darkbeige);
 }
 .instagram{
     grid-area: instagram;
+    text-align: center;
+    background-color: var(--darkbeige);
 }
 .instagram a{
     text-decoration: none;
     color: rgb(07, 07, 07);
+    background-color: var(--darkbeige);
 }
 .email{
     grid-area: email;
+    text-align: center;
+    background-color: var(--darkbeige);
 }
 .email a{
     text-decoration: none;
     color: rgb(07, 07, 07);
+    background-color: var(--darkbeige);
+}
+.logo-footer{
+    grid-area: logo-footer;
+    background-color: var(--darkbeige);
+}
+.logo-footer img{
+    max-width: 60%;
+    background-color: var(--darkbeige);
 }
 @media only screen and (min-width: 660px){  
 /*Her styles navbar til desktop*/
@@ -520,6 +535,19 @@ float: left;
 .birthday-a a:hover{
     background-color: var(--hover);
 }
+@media only screen and (min-width: 660px){
+    .packages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "wedding engagement"
+        "wedding-a engagement-a"
+        "ceremony birthday"
+        "ceremony-a birthday-a";
+    }
+}
+/*Her starter stylingen af prices undersiden, allerførst styling af overskriften*/
 .site-title{
     text-align: center;
     margin-top: 2em;
