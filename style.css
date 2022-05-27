@@ -441,7 +441,7 @@ float: left;
     max-width: 50%;
 }
 }
-/*Her starter vores styling af undersiden packages*/
+/*Her starter vores styling af undersiden packages til mobile*/
 .packages {
     display: grid;
     grid-template-columns: 1fr;
@@ -454,46 +454,40 @@ float: left;
     "ceremony"
     "ceremony-a"
     "birthday"
-    "birthday-a";
+    "birthday-a"
 }
-.packages h1{
-    text-align: center;
-    padding: 1em;
-    font-size: 1.5em;
-}
-/*Hvert element tildeles en plads*/
+/*Hvert område i grid tildeles deres plads*/
 .wedding{
     grid-area: wedding;
 }
-.wedding h3{
-    text-align: center;
-    padding: 1em;
-}
-.wedding img{
-    max-width: 100%;
-}
 .wedding-a{
-    grid-area: wedding-a;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .wedding-a a{
+    grid-area: wedding-a;
     text-decoration: none;
     padding: 0.3em 2.5em;
     color: var(--white);
     background-color: var(--pink);
     text-transform: uppercase;
 }
-/*Hvert a link styles også med en hover effekt*/
 .wedding-a a:hover{
     background-color: var(--hover);
+}
+.wedding h3{
+    text-align: center;
+    padding: 1.5em;
+}
+.wedding img{
+    max-width: 100%;
 }
 .engagement{
     grid-area: engagement;
 }
 .engagement h3{
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
 }
 .engagement img{
     max-width: 100%;
@@ -501,9 +495,10 @@ float: left;
 .engagement-a{
     grid-area: engagement-a;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .engagement-a a{
+    grid-area: wedding-a;
     text-decoration: none;
     padding: 0.3em 2.5em;
     color: var(--white);
@@ -518,7 +513,7 @@ float: left;
 }
 .ceremony h3{
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
 }
 .ceremony img{
     max-width: 100%;
@@ -526,9 +521,10 @@ float: left;
 .ceremony-a{
     grid-area: ceremony-a;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .ceremony-a a{
+    grid-area: wedding-a;
     text-decoration: none;
     padding: 0.3em 2.5em;
     color: var(--white);
@@ -543,17 +539,18 @@ float: left;
 }
 .birthday h3{
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
 }
 .birthday img{
     max-width: 100%;
 }
 .birthday-a{
-    grid-area: birthday;
+    grid-area: birthday-a;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .birthday-a a{
+    grid-area: wedding-a;
     text-decoration: none;
     padding: 0.3em 2.5em;
     color: var(--white);
@@ -563,7 +560,6 @@ float: left;
 .birthday-a a:hover{
     background-color: var(--hover);
 }
-/*Her styles packages grid til desktop*/
 /*Her starter stylingen af prices undersiden, allerførst styling af overskriften*/
 .site-title{
     text-align: center;
