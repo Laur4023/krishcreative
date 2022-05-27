@@ -255,7 +255,25 @@
     display: none;
 }
 /*Styling af review sektionen*/
-
+.review{
+    text-align: center;
+    background-color: var(--beige);
+    padding: 1.5rem;
+}
+.review h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--beige);
+}
+.review p{
+    font-style: italic;
+    margin-bottom: 1em;
+    background-color: var(--beige);
+}
+.review h4{
+    background-color: var(--beige);
+    margin-bottom: 1em;
+}
 /*Styling af footer i grid*/
 .footer{
     display: grid;
@@ -272,7 +290,6 @@
 /*Baggrundsfarve er tilføjet til hvert element da hele sektionen dækkes på den måde*/
 .footer{
     background-color: var(--darkbeige);
-    margin-top: 1rem;
 }
 .contact{
     grid-area: contact;
@@ -447,9 +464,11 @@ float: left;
 .fourthguide{
     grid-area: fourthguide;
 }
-.footer{
-    margin-top: 2rem;
+.review{
+    margin-top: 1.5rem;
+    padding: 3rem;
 }
+/*Styling af footer desktop*/
 .contact h3{
     margin-top: 3em;
 }
