@@ -142,6 +142,9 @@
     background-color: var(--pink);
     text-transform: uppercase;
 }
+.work-a a:hover{
+    background-color: var(--hover);
+}
 .book{
     grid-area: book;
 }
@@ -167,6 +170,9 @@
     color: var(--white);
     background-color: var(--pink);
     text-transform: uppercase;
+}
+.book-a a:hover{
+    background-color: var(--hover);
 }
 .team{
     grid-area: team;
@@ -194,6 +200,9 @@
     color: var(--white);
     background-color: var(--pink);
     text-transform: uppercase;
+}
+.team-a a:hover{
+    background-color: var(--hover);
 }
 /*Styling af howto sektionen*/
 .howto h1{
