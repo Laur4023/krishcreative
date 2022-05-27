@@ -53,6 +53,19 @@
 .links{
     float: none;
 }
+.navguide{
+    text-align: center;
+    padding: 1em;
+    background-color: var(--darkbeige);
+}
+.navguide a{
+    text-decoration: none;
+    background-color: var(--darkbeige);
+    color: rgb(07, 07, 07);
+}
+.navguide a:hover{
+    color: var(--dark);
+}
 /* Forside billedet styles her*/
 .bigimage img{
     max-width: 100%;
@@ -345,6 +358,12 @@ float: left;
 .links{
     float: right;
     margin-right: 2em;
+}
+.navguide{
+    height: 1.5rem;
+}
+.navguide a{
+    float: left;
 }
 /*Grid til forside billedet og tekst*/
 .bigimage {
