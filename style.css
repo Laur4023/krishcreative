@@ -560,6 +560,18 @@ float: left;
 .birthday-a a:hover{
     background-color: var(--hover);
 }
+/*Her styles packages undersiden til desktop i grid*/
+@media screen and (min-width: 660px){
+    .packages {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "wedding engagement ceremony birthday"
+        "wedding-a engagement-a ceremony-a birthday-a";
+    }
+}
 /*Her starter stylingen af prices undersiden, allerførst styling af overskriften*/
 .site-title{
     text-align: center;
