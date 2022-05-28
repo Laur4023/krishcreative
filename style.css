@@ -822,11 +822,14 @@ float: left;
         "gallerythird"
         "galleryfourth";
 }
+.image-gallery{
+    padding: 1.5rem;
+}
 /*Hvert område tildeles et område*/
 .gallery-txt{
     grid-area: gallery-txt;
     text-align: center;
-    padding: 2em;
+    margin-bottom: 1em;
 }
 .galleryfirst{
     grid-area: galleryfirst;
@@ -866,6 +869,7 @@ float: left;
             "gallerythird galleryfourth";
     }
     .gallery-txt{
-        margin-top: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 }
