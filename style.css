@@ -810,25 +810,28 @@ float: left;
         margin-top: 1.8em;
     }
 }
+/*Her styles undersiden Gallery i et grid*/
 .image-gallery{
     display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-        "gallery-txx"
+        "gallery-txt"
         "galleryfirst"
         "gallerysecond"
         "gallerythird"
         "galleryfourth";
 }
+/*Hvert område tildeles et område*/
 .gallery-txt{
     grid-area: gallery-txt;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
 }
 .galleryfirst{
     grid-area: galleryfirst;
 }
+/*Hvert billede styles*/
 .galleryfirst img{
     max-width: 100%;
 }
@@ -850,6 +853,7 @@ float: left;
 .galleryfourth img{
     max-width: 100%;
 }
+/*Her styles grid til desktop*/
 @media only screen and (min-width: 660px){
     .image-gallery{
         display: grid;
@@ -860,5 +864,8 @@ float: left;
             "gallery-txt gallery-txt"
             "galleryfirst gallerysecond"
             "gallerythird galleryfourth";
+    }
+    .gallery-txt{
+        margin-top: 1em;
     }
 }
