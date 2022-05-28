@@ -48,7 +48,7 @@
 }
 .navbar a:active{
     background-color: var(--darkbeige);
-    color: rgb(07, 07, 07);
+    color: var(--dark);
 }
 .links{
     float: none;
