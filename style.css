@@ -121,6 +121,7 @@
 }
 .work img{
     max-width: 100%;
+    margin-top: 1rem;
 }
 .worktxt{
     grid-area: worktxt;
